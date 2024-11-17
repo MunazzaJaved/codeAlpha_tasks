@@ -1,0 +1,122 @@
+
+body {
+      background-color: #c3f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 10px;
+    }
+    
+    .gallery-container {
+      width: 100%;
+      height: 80vh; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+      display: flex;
+      justify-content: space-around;
+      background-color: #d4efef;
+    }
+    
+    .main-image {
+      margin: 40px;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    
+    .main-image img {
+        width:700px;
+        height:350px;
+      object-fit: cover; 
+    }
+    
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color:transparent; 
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      z-index: 10;
+      height: 10px;
+    }
+    
+    .prev {
+      left: 10px; 
+    }
+    
+    .next {
+      right: 10px;
+    }
+    
+    .related-images {
+     display: grid;
+     padding-right: 20px;
+     padding-left: 0;
+     grid-template-columns: 1fr 1fr;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+      padding: 10px;
+      background-color:#f4fcfc;
+      overflow-y: auto;
+      margin-right: 40px;
+     }
+    
+    .related-images img{
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1; 
+      cursor:pointer;
+      border: 2px solid transparent;
+      transition: border 0.3s;
+      margin-left: 10px;
+    }
+   .related-images .rel-img{
+      margin: 10px;
+    }
+    .related-images img:hover {
+      border: 3px solid #1c9c9c;
+    }
+    .main-image img{
+        border: 3px solid #1c9c9c;
+    }
+    @media (max-width: 957px) {
+        .gallery-container {
+          height: 70vh;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          /* padding-left: 50px; */
+        }
+        .related-images{
+            display: flex;
+            width: 100%;
+            padding-right: 20px;
+            padding-left: 0;
+            margin: 0;
+        }
+        .related-images img{
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1; 
+        }
+        .main-image img{
+            width: 100%;
+        }
+    }
+    @media(min-width:957px) and (max-width:1250px){
+        .related-images{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding-right: 20px;
+            padding-left: 0;
+            margin: 0;
+        }
+    }
