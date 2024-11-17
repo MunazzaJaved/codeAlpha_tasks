@@ -1,1 +1,1 @@
-# codeAlpha_tasks...write task anme to access that task live!!..
+# codeAlpha_tasks...write task name in url to access that task live!!..
