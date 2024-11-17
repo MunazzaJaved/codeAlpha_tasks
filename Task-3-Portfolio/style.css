@@ -1,0 +1,129 @@
+#navbar{
+    background-color: #D2E0FB;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+.container-fluid>.navbar-brand{
+    font-family: "Playwrite AU VIC", cursive;
+    color: orange;
+}
+
+body{
+    background-color:#FEF9D980;
+}
+.paragraph{
+    font-family: "Roboto", sans-serif; 
+}
+.profile{
+ border-radius: 50%;
+ margin-top: 100px;
+}
+#containerAbt{
+    background-color: #f5f9ef;
+}
+#educationCon{
+    margin-top: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    display: inline-block;
+    gap: 30px;
+}
+/* .designer{
+  text-decoration-line: underline; #DEE5D4
+} */
+.education>h1{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+.skills{
+    background-color: #f4f7f0;
+}
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+  }
+  .contact-container{
+    background-color: #FEF9D9;
+  }
+  #contact-text{
+    text-align: left;
+  }
+  .btn{
+    background-color: green;
+  }
+  .contact-img{
+    margin-left: 100px;
+  }
+  .contact-details{
+    font-weight: bold;
+  }
+  .con-underline{
+    border-bottom: solid 1px;
+    padding-bottom: 1px;
+    /* text-decoration-line:underline; */
+  }
+  .lead{
+    /* font-size: 15px; */
+    color: black;
+    font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans",;
+  }
+  /* .contact-heading{
+    margin-top: px;
+  } */
+   .Footer{
+    background-color: #8EACCD;
+   }
+   .year{
+    margin-right: 20px;
+   }
+
+   @media (max-width:900px){
+    body{
+      font-size: .8em;
+    }
+    #contact-img{
+      width: 70%;
+    }
+    
+    #btn-sm{
+      width: 50%;
+    }
+    .btn{
+      font-size: .5rem;
+    }
+    #educationCon{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+    #contact-container{
+       h1{
+        font-size: 18px;
+       }
+       p{
+        font-size: 14px;
+       }
+
+    }
+   }
+   #educationCon>.card:hover{
+    transform: scale(1.15);
+   }
+   .card{
+    transition: all 0.3s;
+   }
+   #section4{
+    font-family: "Roboto", sans-serif;
+   }
