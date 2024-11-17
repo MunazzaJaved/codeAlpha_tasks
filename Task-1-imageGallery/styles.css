@@ -84,7 +84,7 @@ body {
     }
     @media (max-width: 957px) {
         .gallery-container {
-          height: 60vh;
+          height: 70vh;
           flex-direction: column;
           align-items: center;
           justify-content: center;
