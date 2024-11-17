@@ -1,9 +1,6 @@
 
 body {
       background-color: #c3f1f1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       height: 100vh;
       padding: 10px;
     }
@@ -87,11 +84,10 @@ body {
     }
     @media (max-width: 957px) {
         .gallery-container {
-          height: 70vh;
+          height: 60vh;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          /* padding-left: 50px; */
         }
         .related-images{
             display: flex;
