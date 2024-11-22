@@ -12,9 +12,20 @@ function appendToDisplay(value) {
   }
 }
 
+function backspace() {
+  if (display.innerText.length > 1) {
+    display.innerText = display.innerText.slice(0, -1);
+  } else {
+    display.innerText = '0';
+  }
+}
+
+function addDoubleZero() {
+  appendToDisplay('00');
+}
+
 function calculateResult() {
   try {
-    // display.innerText = eval(display.innerText.replace('×', '*').replace('÷', '/'));
     let result = eval(display.innerText.replace('×', '*').replace('÷', '/'));
     display.innerText = parseFloat(result.toFixed(12));
   } catch {
